@@ -14,6 +14,7 @@ title: Lattice thermal conductivity using Phono3py
 - Here we get simplified phonon liftime using Single mode relaxation time (SMRT) approximation
 
 2. Your fundamental input file (Don't be a sheep, make appropriate changes) 
+
     PREC = Accurate 
     IBRION = -1  #not moving ions at all, but calculating forces
     ISTART=1 #we're using previously generated WAVECAR to reduce computational time 
