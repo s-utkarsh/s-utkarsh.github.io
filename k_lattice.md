@@ -49,7 +49,7 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
 - <b>Automate the process !!</b>
 
 6. The automation: obviously we use a script to do this, so here we go:
-- First way: in 'C',make a file called fc3run and in that copy the following:<br>
+- If you're working on a workstation (single node) make a file called fcrun, copy the following content and then chmod +X fcrun:<br>
 ``` 
     #! /bin/csh -f 
     # 
@@ -65,6 +65,7 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
             mv POSCAR-0000$No ./disp-0000$No/POSCAR
             cp POTCAR ./disp-0000$No/POTCAR
             cp INCAR ./disp-0000$No/INCAR
+            cp WAVECAR ./disp-$No/WAVECAR
             cd disp-0000$No
             endif
             if ( 10 <= $No && $No < 100) then
@@ -72,18 +73,21 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
             mv POSCAR-000$No ./disp-000$No/POSCAR
             cp POTCAR ./disp-000$No/POTCAR
             cp INCAR ./disp-000$No/INCAR
+            cp WAVECAR ./disp-$No/WAVECAR
             cd disp-000$No
             endif
             if ( 100 <= $No && $No < 1000) then
             mkdir disp-00$No
             mv POSCAR-00$No ./disp-00$No/POSCAR
             cp POTCAR ./disp-00$No/POTCAR
+            cp WAVECAR ./disp-$No/WAVECAR
             cp INCAR ./disp-00$No/INCAR
             cd disp-00$No
         endif
         if ( 1000 <= $No && $No < 10000) then
             mkdir disp-0$No
             mv POSCAR-0$No ./disp-0$No/POSCAR
+            cp WAVECAR ./disp-$No/WAVECAR
             cp POTCAR ./disp-0$No/POTCAR
             cp INCAR ./disp-0$No/INCAR
             cd disp-0$No
@@ -92,6 +96,7 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
             mkdir disp-$No
             mv POSCAR-$No ./disp-$No/POSCAR
             cp POTCAR ./disp-$No/POTCAR
+            cp WAVECAR ./disp-$No/WAVECAR
             cp INCAR ./disp-$No/INCAR
             cd disp-$No
         endif
@@ -99,4 +104,30 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
         cd ..
         @ No = $No + 1
     end
+```
+- If you're working on a cluster, you most probably use a bashrc file to submit jobs:
+    - In this case, divide the POSCAR-XXXXX in multiple equal parts. Keep this WAVECAR file just outside these directories
+    - Append the following to your command for running vasp executable:
     ```
+    for a in `seq -w 00001 00001 XXXXX`
+      do 
+        cp ../WAVECAR .
+        cp POSCAR-$a POSCAR
+        mpiexec.hydra -np 16 vasp_std> out
+        mv vasprun.xml vasprun-$a
+      done
+     ```
+ - Of course for the second method, replace XXXXX by whatever number of files are present in that directory
+ 
+ 
+ 7. Finding the thermal conductivity, <b> The easy part </b>
+ - Step 1: phono3py --cf3 disp-{00001..XXXXX}/vasprun.xml # for first method phono3py --cf3
+ - Step 2: phono3py --dim="2 2 2" -c POSCAR-unitcell
+ - Final step!! - phono3py --fc3 --fc2 --dim="2 2 2" --mesh="21 21 21" -c POSCAR-unitcell --br  --tmin=270 --tmax=1000 --tstep=10
+ - <b>Important</b> Check convergence with --mesh as well and use a value at which k_lattice plateaus.
+ 
+ 8. Visualizing results:
+ - Use hdfview (on ubuntu)
+ - Off diagonal elements: Thermal conductivity is a tensor, so you might get off diagonal elements in some cases due to ENMAX (cutoff) not being large enough. In most cases, it would be neglegible compared to <b>&kappa;<sub>xx</sub></b>, <b>&kappa;<sub>yy</sub></b> and <b>&kappa;<sub>zz</sub></b> values.
+ 
+ 9. We're DONE. Yaaay!! Treat yourself to a chocolate.
