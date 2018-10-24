@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lattice thermal conductivity using Phono3py
+title: Lattice thermal conductivity using Phono3py and VASP
 ---
 Currently I'm working with some Alkali metal based Thermoelectric materials, where the lattice thermal conductivity has not been
 reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub></b> using Phono3py, here I list out some common       pitfalls and summarize the way to carry out calculations. Here are the steps to follow (Always read, make notes, re-read and improve notes)
