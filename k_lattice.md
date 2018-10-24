@@ -5,7 +5,7 @@ title: Lattice thermal conductivity using Phono3py and VASP
 Currently I'm working with some Alkali metal based Thermoelectric materials, where the lattice thermal conductivity has not been
 reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub></b> using Phono3py, here I list out some common       pitfalls and summarize the way to carry out calculations. Here are the steps to follow (Always read, make notes, re-read and improve notes)
 
-/bigodot Stuff to keep in mind while analyzing results (Is this really what you want?):
+I. Stuff to keep in mind while analyzing results (Is this really what you want?):
 
 - The single mode relaxation time approximation (RTA): This is what we're using here
 - Linearized phonon Boltzmann equation: This is what we're solving here
@@ -14,7 +14,7 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
 - Fermi’s golden rule > Im (self energy) = G : The scope of this calculation
 - Phonon lifetime t = 1/2G (To double check your phonon-lifetime results)
 
-2. Your fundamental input file (<b>Don't be a sheep, make appropriate changes</b>) 
+II. Your fundamental input file (<b>Don't be a sheep, make appropriate changes</b>) 
 
     PREC = Accurate 
     IBRION = -1  #not moving ions at all, but calculating forces  
@@ -29,7 +29,7 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
     LCHARG = .FALSE 
     ADDGRID=.TRUE. #The single most important parameter, which ensures that the forces are accurate 
 
-3. Preparing <b>POSCAR-unitcell</b> and <b>WAVECAR</b> (we need it for phono3py)
+III. Preparing <b>POSCAR-unitcell</b> and <b>WAVECAR</b> (we need it for phono3py)
 
 - First, take your conventional lattice cell and make a 2x2x2 (in some cases when you're not dealing with cubic cells, we scale up the cells approprately; For example, in case of a hexagonal cell, if you only wish to calculate kappa in x and y directions, a 2x2x1 supercell would also work)
 - Relax the volume of this supercell with highly accurate convergence criterion and also set it to write WAVECAR file. This is done by the following changes in the incar file:
@@ -38,19 +38,19 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
 - Divide the supercell lattice parameters by 2 and then use as the lattice parameters of the conventional lattice cell. Rename POSCAR (the conventional lattice file) to POSCAR-unitcell
 - DONE
 
-4. Running phono3py to generate displacements:
+IV. Running phono3py to generate displacements:
 
 - phono3py -d --dim="2 2 2" -c POSCAR-unitcell #--dim
 - for isotropic lattices, we can also use phono3py --dim="2 2 2" <b>--sym-fc</b> -c POSCAR-unitcell
 - A large number of POSCAR files (titled POSCAR-XXXXX) would be generated for which we would have to do force calculations using the INCAR provided above. 
 
-5. Here comes the tricky part, <b> How to do all these calculations ? </b>:
+V. Here comes the tricky part, <b> How to do all these calculations ? </b>:
 
 - Don't worry, we're basically doing single SCF cycles for force calculation.
 - We're using WAVECAR to speed up our calculations, doing this makes VASP guess a good starting value of Initial energy.
 - <b>Automate the process !!</b>
 
-6. The automation: obviously we use a script to do this, so here we go:
+VI. The automation: obviously we use a script to do this, so here we go:
 
 - If you're working on a workstation (single node) make a file called fcrun, copy the following content and then chmod +X fcrun:<br>
 ``` 
@@ -108,13 +108,13 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
         @ No = $No + 1
     end
 ```
-- If you're working on a cluster, you most probably use a bashrc file to submit jobs:
+- If you're working on a cluster (which is quite likely) you most probably use a bashrc file to submit jobs:
     - In this case, divide the POSCAR-XXXXX in multiple equal parts. Keep this WAVECAR file just outside these directories
     - Append the following to your command for running vasp executable:
     ```
     for a in `seq -w 00001 00001 XXXXX`
     do 
-     cp ../WAVECAR .
+     cp ../WAVECAR ./
      cp POSCAR-$a POSCAR
      mpiexec.hydra -np 16 vasp_std> out
      mv vasprun.xml vasprun-$a
@@ -122,16 +122,16 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
     ```
 - Of course for the second method, replace XXXXX by whatever number of files are present in that directory.
 
-7. Finding the thermal conductivity, <b> The easy part! </b>  (Well everything is relative isn't it?)
+VII. Finding the thermal conductivity, <b> The easy part! </b>  (Well everything is relative isn't it?)
 
 - Step 1: phono3py --cf3 disp-{00001..XXXXX}/vasprun.xml # for first method, collect all at same place for second method
  - Step 2: phono3py --dim="2 2 2" -c POSCAR-unitcell
  - Final step!! - phono3py --fc3 --fc2 --dim="2 2 2" --mesh="21 21 21" -c POSCAR-unitcell --br  --tmin=270 --tmax=1000 --tstep=10
  - <b>Important :</b> Check convergence with --mesh as well and use a value at which <b>&kappa;<sub>L</sub></b> plateaus.
  
-8. Visualizing results:
+VIII. Visualizing results:
 
 - Use hdfview (on ubuntu)
  - Off diagonal elements: Thermal conductivity is a tensor, so you might get off diagonal elements in some cases due to ENMAX (cutoff) not being large enough. In most cases, it would be neglegible compared to <b>&kappa;<sub>xx</sub></b>, <b>&kappa;<sub>yy</sub></b> and <b>&kappa;<sub>zz</sub></b> values.
  
-9. We're DONE. Yaaay!! Treat yourself to a chocolate.
+IX. We're DONE. Yaaay!! Treat yourself to a chocolate.
