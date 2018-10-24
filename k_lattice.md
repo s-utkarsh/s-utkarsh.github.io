@@ -5,7 +5,7 @@ title: Lattice thermal conductivity using Phono3py and VASP
 Currently I'm working with some Alkali metal based Thermoelectric materials, where the lattice thermal conductivity has not been
 reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub></b> using Phono3py, here I list out some common       pitfalls and summarize the way to carry out calculations. Here are the steps to follow (Always read, make notes, re-read and improve notes)
 
-<b>&bigodot;</b> Stuff to keep in mind while analyzing results (Is this really what you want?):
+1. Stuff to keep in mind while analyzing results (Is this really what you want?):
 
 - The single mode relaxation time approximation (RTA): This is what we're using here
 - Linearized phonon Boltzmann equation: This is what we're solving here
@@ -14,22 +14,22 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
 - Fermi’s golden rule > Im (self energy) = G : The scope of this calculation
 - Phonon lifetime t = 1/2G (To double check your phonon-lifetime results)<br>
 
-<b>&bigodot;</b> Your fundamental input file (<b>Don't be a sheep, make appropriate changes</b>) 
+2. Your fundamental input file (<b>Don't be a sheep, make appropriate changes</b>) 
 
-    PREC = Accurate <br>
-    IBRION = -1  #not moving ions at all, but calculating forces  <br>
-    ISTART=1 #we're using previously generated WAVECAR to reduce computational time  <br>
-    ENCUT = 500   <br>
-    EDIFF = 1.0e-08 #We definitely need good precision <br>
-    ISMEAR = 0 <br>
-    SIGMA = 0.01 #choose whatever suits your system <br>
-    IALGO = 38 <br>
-    LREAL = .FALSE. #important <br>
-    LWAVE = .FALSE. <br>
-    LCHARG = .FALSE <br>
-    ADDGRID=.TRUE. #The single most important parameter, which ensures that the forces are accurate <br>
+    PREC = Accurate 
+    IBRION = -1  #not moving ions at all, but calculating forces  
+    ISTART=1 #we're using previously generated WAVECAR to reduce computational time  
+    ENCUT = 500   
+    EDIFF = 1.0e-08 #We definitely need good precision 
+    ISMEAR = 0 
+    SIGMA = 0.01 #choose whatever suits your system 
+    IALGO = 38 
+    LREAL = .FALSE. #important 
+    LWAVE = .FALSE. 
+    LCHARG = .FALSE 
+    ADDGRID=.TRUE. #The single most important parameter, which ensures that the forces are accurate 
 
-<b>&bigodot;</b> Preparing <b>POSCAR-unitcell</b> and <b>WAVECAR</b> (we need it for phono3py)
+3. Preparing <b>POSCAR-unitcell</b> and <b>WAVECAR</b> (we need it for phono3py)
 
 - First, take your conventional lattice cell and make a 2x2x2 (in some cases when you're not dealing with cubic cells, we scale up the cells approprately; For example, in case of a hexagonal cell, if you only wish to calculate kappa in x and y directions, a 2x2x1 supercell would also work)
 - Relax the volume of this supercell with highly accurate convergence criterion and also set it to write WAVECAR file. This is done by the following changes in the incar file:
@@ -38,19 +38,19 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
 - Divide the supercell lattice parameters by 2 and then use as the lattice parameters of the conventional lattice cell. Rename POSCAR (the conventional lattice file) to POSCAR-unitcell
 - DONE<br>
 
-<b>&bigodot;</b> Running phono3py to generate displacements:
+4. Running phono3py to generate displacements:
 
 - phono3py -d --dim="2 2 2" -c POSCAR-unitcell #--dim
 - for isotropic lattices, we can also use phono3py --dim="2 2 2" <b>--sym-fc</b> -c POSCAR-unitcell
 - A large number of POSCAR files (titled POSCAR-XXXXX) would be generated for which we would have to do force calculations using the INCAR provided above. <br>
 
-<b>&bigodot;</b> Here comes the tricky part, <b> How to do all these calculations ? </b>:
+5. Here comes the tricky part, <b> How to do all these calculations ? </b>:
 
 - Don't worry, we're basically doing single SCF cycles for force calculation.
 - We're using WAVECAR to speed up our calculations, doing this makes VASP guess a good starting value of Initial energy.
 - <b>Automate the process !!</b><br>
 
-<b>&bigodot;</b> The automation: obviously we use a script to do this, so here we go:
+6. The automation: obviously we use a script to do this, so here we go:
 
 - If you're working on a workstation (single node) make a file called fcrun, copy the following content and then chmod +X fcrun:<br>
 ``` 
@@ -122,16 +122,16 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
     ```
 - Of course for the second method, replace XXXXX by whatever number of files are present in that directory.<br>
 
-<b>&bigodot;</b> Finding the thermal conductivity, <b> The easy part! </b>  (Well everything is relative isn't it?)
+7. Finding the thermal conductivity, <b> The easy part! </b>  (Well everything is relative isn't it?)
 
 - Step 1: phono3py --cf3 disp-{00001..XXXXX}/vasprun.xml # for first method, collect all at same place for second method
  - Step 2: phono3py --dim="2 2 2" -c POSCAR-unitcell
  - Final step!! - phono3py --fc3 --fc2 --dim="2 2 2" --mesh="21 21 21" -c POSCAR-unitcell --br  --tmin=270 --tmax=1000 --tstep=10
  - <b>Important :</b> Check convergence with --mesh as well and use a value at which <b>&kappa;<sub>L</sub></b> plateaus.<br>
  
-<b>&bigodot;</b> Visualizing results:
+8. Visualizing results:
 
 - Use hdfview (on ubuntu)
  - Off diagonal elements: Thermal conductivity is a tensor, so you might get off diagonal elements in some cases due to ENMAX (cutoff) not being large enough. In most cases, it would be neglegible compared to <b>&kappa;<sub>xx</sub></b>, <b>&kappa;<sub>yy</sub></b> and <b>&kappa;<sub>zz</sub></b> values.<br>
  
-<b>&bigodot;</b> We're DONE. Yaaay!! Treat yourself to a chocolate.
+9. We're DONE. Yaaay!! Treat yourself to a chocolate.
