@@ -110,13 +110,13 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
     - Append the following to your command for running vasp executable:
     ```
     for a in `seq -w 00001 00001 XXXXX`
-      do 
-        cp ../WAVECAR .
-        cp POSCAR-$a POSCAR
-        mpiexec.hydra -np 16 vasp_std> out
-        mv vasprun.xml vasprun-$a
-      done
-     ```
+    do 
+      cp ../WAVECAR .
+      cp POSCAR-$a POSCAR
+      mpiexec.hydra -np 16 vasp_std> out
+      mv vasprun.xml vasprun-$a
+    done
+    ```
  - Of course for the second method, replace XXXXX by whatever number of files are present in that directory
  
  
