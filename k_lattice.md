@@ -16,23 +16,14 @@ title: Lattice thermal conductivity using Phono3py
 2. Your fundamental input file (<b>Don't be a sheep, make appropriate changes</b>) 
 
     PREC = Accurate 
-    
     IBRION = -1  #not moving ions at all, but calculating forces
-    
     ISTART=1 #we're using previously generated WAVECAR to reduce computational time 
-    
     ENCUT = 500  
-    
     EDIFF = 1.0e-08 #We definitely need good precision
-    
-    ISMEAR = 0; 
-    
+    ISMEAR = 0;
     SIGMA = 0.01 #choose whatever suits your system
-    
-    IALGO = 38LREAL = .FALSE. #important
-    
+    IALGO = 38
+    LREAL = .FALSE. #important
     LWAVE = .FALSE.
-    
     LCHARG = .FALSE
-    
     ADDGRID=.TRUE. #The single most important parameter, which ensures that the forces are accurate
