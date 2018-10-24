@@ -1,5 +1,8 @@
 ---
 layout: page
+
+
+
 title: Work Blog
 ---
 
