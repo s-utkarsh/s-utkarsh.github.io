@@ -10,7 +10,7 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
 - The single mode relaxation time approximation (RTA): This is what we're using here
 - Linearized phonon Boltzmann equation: This is what we're solving here
 - The phonon-boundary scattering model: This indicates the scope of this calculation
-- The cubic anharmonic force constant (3rd order): The absolute thermal conductivity, calssically can be expressed as a taylor series expansion
+- The anharmonic force constant (3rd order): The absolute thermal conductivity, calssically can be expressed as a taylor series expansion
 - Fermi’s golden rule > Im (self energy) = G : The scope of this calculation
 - Phonon lifetime t = 1/2G (To double check your phonon-lifetime results)<br>
 
