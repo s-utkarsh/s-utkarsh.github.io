@@ -121,10 +121,10 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
  
  
  7. Finding the thermal conductivity, <b> The easy part </b>
- - Step 1: phono3py --cf3 disp-{00001..XXXXX}/vasprun.xml # for first method phono3py --cf3
+ - Step 1: phono3py --cf3 disp-{00001..XXXXX}/vasprun.xml # for first method, collect all at same place for second method
  - Step 2: phono3py --dim="2 2 2" -c POSCAR-unitcell
  - Final step!! - phono3py --fc3 --fc2 --dim="2 2 2" --mesh="21 21 21" -c POSCAR-unitcell --br  --tmin=270 --tmax=1000 --tstep=10
- - <b>Important</b> Check convergence with --mesh as well and use a value at which k_lattice plateaus.
+ - <b>Important</b> Check convergence with --mesh as well and use a value at which <b>&kappa;<sub>L</sub></b> plateaus.
  
  8. Visualizing results:
  - Use hdfview (on ubuntu)
