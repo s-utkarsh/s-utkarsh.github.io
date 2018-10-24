@@ -50,7 +50,7 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
 
 6. The automation: obviously we use a script to do this, so here we go:
 - First way: in 'C',make a file called fc3run and in that copy the following:<br>
-```   #! /bin/csh -f 
+``` #! /bin/csh -f 
     # 
     set max = `sed -n -e 's/num_displacements_created: //1p' disp_fc3.yaml` 
     set No = 1 
