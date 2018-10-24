@@ -50,51 +50,51 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
 
 6. The automation: obviously we use a script to do this, so here we go:
 - First way: in 'C',make a file called fc3run and in that copy the following:<br>
-```   #! /bin/csh -f <br>
-    # <br>
-    set max = `sed -n -e 's/num_displacements_created: //1p' disp_fc3.yaml` <br>
-    set No = 1 <br>
-    echo $No, $max <br>
-    while ( $No <= $max ) <br>
-        echo "Here we go......" <br>
-        echo $No"/"$max <br>
-        date <br>
-        if ( $No < 10) then <br>
-            mkdir disp-0000$No<br>
-            mv POSCAR-0000$No ./disp-0000$No/POSCAR<br>
-            cp POTCAR ./disp-0000$No/POTCAR<br>
-            cp INCAR ./disp-0000$No/INCAR<br>
-            cd disp-0000$No<br>
-            endif<br>
-            if ( 10 <= $No && $No < 100) then<br>
-            mkdir disp-000$No<br>
-            mv POSCAR-000$No ./disp-000$No/POSCAR<br>
-            cp POTCAR ./disp-000$No/POTCAR<br>
-            cp INCAR ./disp-000$No/INCAR<br>
-            cd disp-000$No<br>
-            endif<br>
-            if ( 100 <= $No && $No < 1000) then<br>
-            mkdir disp-00$No<br>
-            mv POSCAR-00$No ./disp-00$No/POSCAR<br>
-            cp POTCAR ./disp-00$No/POTCAR<br>
-            cp INCAR ./disp-00$No/INCAR<br>
-            cd disp-00$No<br>
-        endif<br>
-        if ( 1000 <= $No && $No < 10000) then<br>
-            mkdir disp-0$No<br>
-            mv POSCAR-0$No ./disp-0$No/POSCAR<br>
-            cp POTCAR ./disp-0$No/POTCAR<br>
-            cp INCAR ./disp-0$No/INCAR<br>
-            cd disp-0$No<br>
-        endif<br>
-        if ( 10000 <= $No && $No < 100000) then<br>
-            mkdir disp-$No<br>
-            mv POSCAR-$No ./disp-$No/POSCAR<br>
-            cp POTCAR ./disp-$No/POTCAR<br>
-            cp INCAR ./disp-$No/INCAR<br>
-            cd disp-$No<br>
-        endif<br>
-        mpirun -np <b>no. of processors  vasp_executable</b><br>
-        cd ..<br>
-        @ No = $No + 1<br>
-    end<br>``` 
+```   #! /bin/csh -f 
+    # 
+    set max = `sed -n -e 's/num_displacements_created: //1p' disp_fc3.yaml` 
+    set No = 1 
+    echo $No, $max 
+    while ( $No <= $max ) 
+        echo "Here we go......" 
+        echo $No"/"$max 
+        date 
+        if ( $No < 10) then 
+            mkdir disp-0000$No
+            mv POSCAR-0000$No ./disp-0000$No/POSCAR
+            cp POTCAR ./disp-0000$No/POTCAR
+            cp INCAR ./disp-0000$No/INCAR
+            cd disp-0000$No
+            endif
+            if ( 10 <= $No && $No < 100) then
+            mkdir disp-000$No
+            mv POSCAR-000$No ./disp-000$No/POSCAR
+            cp POTCAR ./disp-000$No/POTCAR
+            cp INCAR ./disp-000$No/INCAR
+            cd disp-000$No
+            endif
+            if ( 100 <= $No && $No < 1000) then
+            mkdir disp-00$No
+            mv POSCAR-00$No ./disp-00$No/POSCAR
+            cp POTCAR ./disp-00$No/POTCAR
+            cp INCAR ./disp-00$No/INCAR
+            cd disp-00$No
+        endif
+        if ( 1000 <= $No && $No < 10000) then
+            mkdir disp-0$No
+            mv POSCAR-0$No ./disp-0$No/POSCAR
+            cp POTCAR ./disp-0$No/POTCAR
+            cp INCAR ./disp-0$No/INCAR
+            cd disp-0$No
+        endif
+        if ( 10000 <= $No && $No < 100000) then
+            mkdir disp-$No
+            mv POSCAR-$No ./disp-$No/POSCAR
+            cp POTCAR ./disp-$No/POTCAR
+            cp INCAR ./disp-$No/INCAR
+            cd disp-$No
+        endif
+        mpirun -np <b>no. of processors  vasp_executable</b>
+        cd ..
+        @ No = $No + 1
+    end``` 
