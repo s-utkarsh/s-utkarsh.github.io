@@ -12,7 +12,7 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
 - The phonon-boundary scattering model: This indicates the scope of this calculation
 - The cubic anharmonic force constant (3rd order): The absolute thermal conductivity, calssically can be expressed as a taylor series expansion
 - Fermi’s golden rule > Im (self energy) = G : The scope of this calculation
-- Phonon lifetime t = 1/2G (To double check your phonon-lifetime results)
+- Phonon lifetime t = 1/2G (To double check your phonon-lifetime results)<br>
 
 2. Your fundamental input file (<b>Don't be a sheep, make appropriate changes</b>) 
 
@@ -36,19 +36,19 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
     - LWAVE=.TRUE.
     - EDIFF=1E-09 # remember that EDIFFG=10 times EDIFF
 - Divide the supercell lattice parameters by 2 and then use as the lattice parameters of the conventional lattice cell. Rename POSCAR (the conventional lattice file) to POSCAR-unitcell
-- DONE
+- DONE <br>
 
 
 4. Running phono3py to generate displacements:
 - phono3py -d --dim="2 2 2" -c POSCAR-unitcell #--dim
 - for isotropic lattices, we can also use phono3py --dim="2 2 2" <b>--sym-fc</b> -c POSCAR-unitcell
-- A large number of POSCAR files (titled POSCAR-XXXXX) would be generated for which we would have to do force calculations using the INCAR provided above.
+- A large number of POSCAR files (titled POSCAR-XXXXX) would be generated for which we would have to do force calculations using the INCAR provided above. <br>
 
 
 5. Here comes the tricky part, <b> How to do all these calculations ? </b>:
 - Don't worry, we're basically doing single SCF cycles for force calculation.
 - We're using WAVECAR to speed up our calculations, doing this makes VASP guess a good starting value of Initial energy.
-- <b>Automate the process !!</b>
+- <b>Automate the process !!</b><br>
 
 
 6. The automation: obviously we use a script to do this, so here we go:
@@ -121,19 +121,19 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
      mv vasprun.xml vasprun-$a
     done
     ```
-- Of course for the second method, replace XXXXX by whatever number of files are present in that directory
- 
+- Of course for the second method, replace XXXXX by whatever number of files are present in that directory<br>
+ <br>
 
 7. Finding the thermal conductivity, <b> The easy part! </b>  (Well everything is relative isn't it?)
  - Step 1: phono3py --cf3 disp-{00001..XXXXX}/vasprun.xml # for first method, collect all at same place for second method
  - Step 2: phono3py --dim="2 2 2" -c POSCAR-unitcell
  - Final step!! - phono3py --fc3 --fc2 --dim="2 2 2" --mesh="21 21 21" -c POSCAR-unitcell --br  --tmin=270 --tmax=1000 --tstep=10
- - <b>Important</b> Check convergence with --mesh as well and use a value at which <b>&kappa;<sub>L</sub></b> plateaus.
+ - <b>Important</b> Check convergence with --mesh as well and use a value at which <b>&kappa;<sub>L</sub></b> plateaus.<br>
  
 
 8. Visualizing results:
  - Use hdfview (on ubuntu)
- - Off diagonal elements: Thermal conductivity is a tensor, so you might get off diagonal elements in some cases due to ENMAX (cutoff) not being large enough. In most cases, it would be neglegible compared to <b>&kappa;<sub>xx</sub></b>, <b>&kappa;<sub>yy</sub></b> and <b>&kappa;<sub>zz</sub></b> values.
+ - Off diagonal elements: Thermal conductivity is a tensor, so you might get off diagonal elements in some cases due to ENMAX (cutoff) not being large enough. In most cases, it would be neglegible compared to <b>&kappa;<sub>xx</sub></b>, <b>&kappa;<sub>yy</sub></b> and <b>&kappa;<sub>zz</sub></b> values.<br>
  
 
 9. We're DONE. Yaaay!! Treat yourself to a chocolate.
