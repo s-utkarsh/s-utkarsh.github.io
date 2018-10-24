@@ -123,7 +123,6 @@ reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub><
     ```
 - Of course for the second method, replace XXXXX by whatever number of files are present in that directory
  
- 
 
 7. Finding the thermal conductivity, <b> The easy part! </b>  (Well everything is relative isn't it?)
  - Step 1: phono3py --cf3 disp-{00001..XXXXX}/vasprun.xml # for first method, collect all at same place for second method
