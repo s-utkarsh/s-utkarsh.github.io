@@ -22,8 +22,7 @@ title: CV
                     An aspiring researcher, seeking admission to a M.S./Ph.D. program in a reputed university. I have the most desparate desire to become an academician as I find great pleasure in teaching and interacting with students. Please find a pdf version of the CV <a href="https://drive.google.com/file/d/0B1erftIvQuqyU3lmdWlOMWJxNXM/view?usp=sharing">here</a>, and the academic record <a href="https://drive.google.com/file/d/0B1erftIvQuqyOTlwUFczTmw4dVE/view?usp=sharing">here</a>. 
                 </p>
 
-
-                <div class="row">
+  <div class="row">
                     <div class="col-md-3">
                         <div class="personal-details">
                             <strong>JANUARY 15, 1997</strong>
@@ -66,7 +65,7 @@ title: CV
                             <h3>Polymer Physics</h3>
 						
 						<p>Worked on nanogels (poly-NIPAM), nanoparticles and polymer chains</p>
-                        </div>
+ </div>
                         <!-- .experience-item -->
                     </div>
                     <div class="col-md-6">
@@ -74,18 +73,18 @@ title: CV
                             <h3>Molecular Simulations</h3>
 
 						<p>Strong grasp of MC, kMC and MD simulation methodologies</p>
-                        </div>
+  </div>
                         <!-- .experience-item -->
                     </div>
                 </div>
                 <div class="row">
 
-                    <div class="col-md-6">
+   <div class="col-md-6">
                         <div class="content-item">
                             <h3>Mathematical Modeling</h3>
 
 						<p>Understanding of physical phenomena needed to analyze most systems</p>
-                        </div>
+</div>
                         <!-- .experience-item -->
 					 </div>
                     <div class="col-md-6">
@@ -93,10 +92,10 @@ title: CV
                             <h3>Discrete Element Simulations</h3>
 
 						<p>Implemented for rough chute flow and fluidised bed</p>
-                        </div>
+ </div>
                         <!-- .experience-item -->
 
-                    </div>
+</div>
                 </div>
             </div>
             <!--.row-->
@@ -120,7 +119,7 @@ title: CV
                             <h3>Bachelor of Technology in Chemical Engineering</h3>
                             <h4>Indian Institute of Technology, Roorkee, India</h4>
 
-                            <p>8.732 on a 10-point basis</p>
+  <p>8.732 on a 10-point basis</p>
                         </div>
                         <!-- .experience-item -->
                     </div>
@@ -130,7 +129,7 @@ title: CV
                             <h3>Senior Secondary Education</h3>
                             <h4>Central Board of Secondary Education, CBSE</h4>
 
-                            <p>95.8%</p>
+<p>95.8%</p>
                         </div>
                         <!-- .experience-item -->
                     </div>
@@ -428,20 +427,20 @@ title: CV
                     <div class="col-md-3">
                         <address>
                             <strong>Email</strong><br>
-                            <a href="mailto:rakshitkjain@gmail.com">rakshitkjain@gmail.com</a>
-                        </address>
-                    </div>
+ <a href="mailto:rakshitkjain@gmail.com">rakshitkjain@gmail.com</a>
+</address>
+ </div>
 
-                </div>
+   </div>
                 <!--.row-->
 
 
 
-            </div>
-        </div>
+   </div>
+ </div>
         <!--.row-->
 
-    </div>
+ </div>
     <!--.container-fluid-->
 </section>
 <!--.section-contact-->
