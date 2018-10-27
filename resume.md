@@ -3,7 +3,7 @@ layout: page
 title:  CV
 ---
 # Utkarsh Singh
-Undergraduate Student,
+Undergraduate Student
 
 Bachelors of Technology, Senior Year<br/>
 Department of Chemical Engineering<br/>
