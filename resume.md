@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: cv
 title:  CV
 ---
 # Utkarsh Singh
@@ -23,9 +23,10 @@ Indian Institute of Technology, Roorkee, India<br/>
 **Bachelors of Technology, Chemical Engineering**, *Indian Institute of Technology, Roorkee*, India.
 <br/>GPA: *7.93 on a 10.00 point scale*
 `2012-2014`
-**Senior Secondary Education**, *Central Board of Secondary Education*, India.
-<br/>*92.8%*
-**Secondary Education**, *Central Board of Secondary Education*, India
+**Senior Secondary Education**, <br/>*Central Board of Secondary Education*, India.
+<br/>*92.8%*<br/>
+`2012-2014`
+**Secondary Education**, <br/>*Central Board of Secondary Education*, India
 <br/>GPA: *10.00 on a 10.00 point scale*
 
 ## Experience
