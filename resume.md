@@ -2,7 +2,7 @@
 layout: cv
 title:  CV
 ---
-# David Whipp
+# Utkarsh Singh
 Associate professor, University of Helsinki
 
 Institute of Seismology, Department of Geosciences and Geography<br/>
