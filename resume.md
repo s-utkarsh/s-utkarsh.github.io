@@ -2,7 +2,7 @@
 layout: cv
 title:  CV
 ---
-# Utkarsh Singh  , *Undergraduate Student, IIT Roorkee, India*
+*Undergraduate Student, IIT Roorkee, India*
 
 <a href="usingh1@ch.iitr.ac.in">usingh1@ch.iitr.ac.in</a> - (+91) - 8899416395
 
@@ -21,7 +21,8 @@ title:  CV
 ## Internships
 
 `May-July, 2018`
-**Exploring Phase Stability and Magnetism in Full-Heusler Alloys.**, *Department of Geosciences and Geography, University of Helsinki*, Helsinki, Finland.
+**Exploring Phase Stability and Magnetism in Full-Heusler Alloys.**, *CRANN - Trinity College Dublin, Ireland* <br/>
+Dr. Stefano Sanvito
 
 `May-July, 2017`
 **Adjunct of the Faculty of Graduate Studies**, *Department of Earth Sciences, Dalhousie University*, Halifax, NS, Canada.
