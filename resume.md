@@ -31,10 +31,28 @@ Dr. Stefano Sanvito
 
 `VASP` - I learned it through my internship projects <br/>
 `GROMACS` - Currently Working with GROMACS for my B.Tech thesis <br/>
-`FPLO, Quantum Espresso, Wien2k` - Worked with these DFT solvers for some of my projects <br/>
+`FPLO, Quantum Espresso, Wien2k` - Used these DFT solvers for some of my projects <br/>
 `C++,Python & Bash Scripting` - Used in different segements for nearly all the work I do <br/>
 `HTML, CSS, Javascript` - Work with these as part of my Sophmore proficiency project <br/>
 
 ## Research Projects
 
-`August,2018-Ongoing`
+`August,2018 - Ongoing` Multiscale Modelling of Polymeric Systems <br/>
+Dr. Prateek Kumar Jha, Department of Chemical Engineering, IIT Roorkee <br/>
+As part of my final year project, I’m working on investigating Aggregation of a polymer as a
+function of pH level of the system via. systematic course graining using the results of Atomistic level
+simulations.
+
+`September, 2018 - Ongoing` Alkali metal based Alloys as High F.O.M. thermoelectrics <br/>
+Dr. Hem Chandra Kandpal, Department of Chemistry, IIT Roorkee <br/>
+Thermoelectric investigation of Alkali metal based Heuslers where we use Wien2k, BoltzTraP and
+Phono3py (with VASP) to calculate electronic, transport and thermal properties respectively.
+
+`September, 2018 - Ongoing` Alkali metal based Alloys as High F.O.M. thermoelectrics <br/>
+Dr. Hem Chandra Kandpal, Department of Chemistry, IIT Roorkee <br/>
+Thermoelectric investigation of Alkali metal based Heuslers where we use Wien2k, BoltzTraP and
+Phono3py (with VASP) to calculate electronic, transport and thermal properties respectively.
+
+
+
+
