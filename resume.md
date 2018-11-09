@@ -4,7 +4,7 @@ title:  Curriculum Vitae
 ---
 *Undergraduate Student, IIT Roorkee, India*
 
-<a mailto:usingh1@ch.iitr.ac.in>usingh1@ch.iitr.ac.in</a> - (+91) - 8899416395
+mailto:usingh1@ch.iitr.ac.in - (+91) - 8899416395
 
 ## Education
 
@@ -30,9 +30,13 @@ Dr. Stefano Sanvito
 ## Computer Skills
 
 `VASP` - I learned it through my internship projects
+
 `GROMACS` - Currently Working with GROMACS for my B.Tech thesis
+
 `FPLO, Quantum Espresso, Wien2k` - Worked with these DFT solvers for some of my projects
+
 `C++,Python & Bash Scripting` - Used in different segements for nearly all the work I do
+
 `HTML, CSS, Javascript` - Work with these as part of my Sophmore proficiency project
 
 ## Research Projects
