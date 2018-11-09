@@ -4,7 +4,7 @@ title:  Curriculum Vitae
 ---
 *Undergraduate Student, IIT Roorkee, India*
 
-mailto:usingh1@ch.iitr.ac.in - (+91) - 8899416395
+<a href=mailto:usingh1@ch.iitr.ac.in>usingh1@ch.iitr.ac.in</a> - (+91) - 8899416395
 
 ## Education
 
