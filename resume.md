@@ -84,7 +84,7 @@ ranging from *Working of a mosquito repellent machine* to *How crypto-currency w
 
 ## References
 
-Dr. Stefano Sanvito                       Dr. Hem Chandra Kandpal <br/>
+Dr. Stefano Sanvito   &nbsp;                  Dr. Hem Chandra Kandpal <br/>
 Professor, Physics and Head, CRANN        Asso. Professor, Department of Chemistry <br/>
 Trinity College Dublin                    Indian Institute of Technology, Roorkee <br/>
 Dublin 2, Ireland                         Roorkee, India -247667 <br/>
