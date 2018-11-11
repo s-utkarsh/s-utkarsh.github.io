@@ -84,21 +84,21 @@ ranging from *Working of a mosquito repellent machine* to *How crypto-currency w
 
 ## References
 
-Dr. Stefano Sanvito                                      
+**Dr. Stefano Sanvito**                                      
 Professor, Physics and Head, CRANN                       
 Trinity College Dublin                                   
 Dublin 2, Ireland                                        
 Email: ssanvito@tcd.ie                                  
 Phone: +353 1 896 3065                                  
 
-Dr. Hem Chandra Kandpal <br/>
+**Dr. Hem Chandra Kandpal** <br/>
 Asso. Professor, Department of Chemistry <br/>
 Indian Institute of Technology, Roorkee <br/>
 Roorkee, India -247667 <br/>
 Email: hem12fcy@iitr.ac.in <br/>
 Phone: +91 1332 284764 <br/>
  
-Dr. Vijay Kumar <br/>
+**Dr. Vijay Kumar** <br/>
 Head, Vijay Kumar Foundation <br/>
 Professor, Shiv Nadar University <br/>
 Gurgaon, India <br/>
