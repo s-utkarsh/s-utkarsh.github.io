@@ -65,7 +65,7 @@ this on the basis of properties derived from the bandstructure of the material.
 `2018-Present` **Undergraduate Teaching Assistant** <br/>
 Physcial Chemistry (CY-001) - IIT Roorkee <br/>
 
-`2017-2018` **General Secratary** <br/>
+`2017-2018` **General Secretary** <br/>
 Indian Institute of Chemical Engineers (IIChE) Students’ Chapter - IIT Roorkee <br/>
 
 `2015-2017` **Editor** <br/>
