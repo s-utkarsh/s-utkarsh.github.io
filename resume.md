@@ -36,7 +36,7 @@ Investigated the electronic and structural properties of a variety of 2-D Boroph
 `GROMACS` - Currently Working with GROMACS for my B.Tech thesis <br/>
 `FPLO, Quantum Espresso, Wien2k` - Used these DFT solvers for some of my projects <br/>
 `C++,Python & Bash Scripting` - Used in different segements for nearly all the work I do <br/>
-`HTML, CSS, Javascript` - Work with these as part of my Sophmore proficiency project <br/>
+`HTML, CSS, Javascript` - Worked with these as part of my Sophmore proficiency project <br/>
 
 ## Research Projects
 
