@@ -87,12 +87,12 @@ ranging from *Working of a mosquito repellent machine* to *How crypto-currency w
 
 ## References
 
-**<a href="https://scholar.google.com/citations?user=EUXp2J0AAAAJ&hl=en">Dr. Stefano Sanvito</a>** <br/>                                 
-Professor, Physics and Head, CRANN <br/>                      
-Trinity College Dublin  <br/>                                 
-Dublin 2, Ireland            <br/>                            
-Email: <a href="mailto:ssanvito@tcd.ie">ssanvito@tcd.ie</a> <br/>                                  
-Phone: +353 1 896 3065            <br/>                      
+**<a href="https://scholar.google.com/citations?user=EUXp2J0AAAAJ&hl=en">Dr. Stefano Sanvito</a>**                                 
+Professor, Physics and Head, CRANN    
+Trinity College Dublin     
+Dublin 2, Ireland              
+Email: <a href="mailto:ssanvito@tcd.ie">ssanvito@tcd.ie</a>                              
+Phone: +353 1 896 3065                                  
 
 **<a href="https://scholar.google.co.in/citations?user=0QZudlsAAAAJ&hl=en">Dr. Hem Chandra Kandpal</a>** <br/>
 Asso. Professor, Department of Chemistry <br/>
@@ -105,5 +105,5 @@ Phone: +91 1332 284764 <br/>
 Head, Vijay Kumar Foundation <br/>
 Professor, Shiv Nadar University <br/>
 Gurgaon, India <br/>
-Email: <a href="mailto:kumar@vkf.in">kumar@vkf.in</a> <a href="mailto:vijay.kumar@snu.edu">vijay.kumar@snu.edu</a> <br/>
+Email: <a href="mailto:kumar@vkf.in">kumar@vkf.in</a> &  <a href="mailto:vijay.kumar@snu.edu">vijay.kumar@snu.edu</a> <br/>
 Phone: +91 0124 407 9369 <br/>
