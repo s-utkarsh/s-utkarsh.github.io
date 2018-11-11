@@ -10,13 +10,13 @@ title:  Curriculum Vitae
 
 `2015-Present`
 **Bachelors of Technology, Chemical Engineering**, <br/>*Indian Institute of Technology, Roorkee*, India.
-<br/>GPA: *7.93 on a 10.00 point scale*<br/>
+<br/>GPA: *7.93 on a 10.00 point scale*<br/><br/>
 `2012-2014`
 **Senior Secondary Education**, <br/>*Central Board of Secondary Education*, India.
-<br/>*92.8%*<br/>
+<br/>*92.8%*<br/><br/>
 `2012-2014`
 **Secondary Education**, <br/>*Central Board of Secondary Education*, India
-<br/>GPA: *10.00 on a 10.00 point scale*
+<br/>GPA: *10.00 on a 10.00 point scale*<br/>
 
 ## Internships
 
