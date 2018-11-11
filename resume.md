@@ -21,12 +21,12 @@ title:  Curriculum Vitae
 ## Internships
 
 `May-July, 2018`
-**Exploring Phase Stability and Magnetism in Full-Heusler Alloys.**, *CRANN - Trinity College Dublin, Ireland* <br/>
+**Exploring Phase Stability and Magnetism in Full-Heusler Alloys.** *CRANN - Trinity College Dublin, Ireland* <br/>
 <a href="https://scholar.google.com/citations?user=EUXp2J0AAAAJ&hl=en">Dr. Stefano Sanvito</a> <br/>
 Carried out Electronic Structure Calculations, at the level of Density Functional Theory, for alternative crystal structures and possible complex magnetic ground states. In a significant number of cases, especially for Unconventional Heuslers, was able to identify new lowest energy structure below the convex hull diagram for given chemical composition.<br/>
 
 `May-July, 2017`
-**Investigating 2-Dimensional Borophene sheets on intermetallic substrates**, *Vijay Kumar Foundation, India* <br/>
+**Investigating 2-Dimensional Borophene sheets on intermetallic substrates** *Vijay Kumar Foundation, India* <br/>
 <a href="https://scholar.google.co.in/citations?user=Uq92p1kAAAAJ&hl=en">Dr. Vijay Kumar</a> <br/>
 Investigated the electronic and structural properties of a variety of 2-D Borophene sheets on differnt suitable intermetallic substrates using Electronic Strucure Calculations via. DFT approach. *Currently working on a manuscript to be published in a reputed peer-reviewed journal.*<br/>
 
@@ -94,14 +94,14 @@ Dublin 2, Ireland
 Email: ssanvito@tcd.ie                                  
 Phone: +353 1 896 3065                                  
 
-**Dr. Hem Chandra Kandpal** <br/>
+**<a href="https://scholar.google.co.in/citations?user=0QZudlsAAAAJ&hl=en">Dr. Hem Chandra Kandpal</a>** <br/>
 Asso. Professor, Department of Chemistry <br/>
 Indian Institute of Technology, Roorkee <br/>
 Roorkee, India -247667 <br/>
 Email: hem12fcy@iitr.ac.in <br/>
 Phone: +91 1332 284764 <br/>
  
-**Dr. Vijay Kumar** <br/>
+**<a href="https://scholar.google.co.in/citations?user=Uq92p1kAAAAJ&hl=en">Dr. Vijay Kumar</a>** <br/>
 Head, Vijay Kumar Foundation <br/>
 Professor, Shiv Nadar University <br/>
 Gurgaon, India <br/>
