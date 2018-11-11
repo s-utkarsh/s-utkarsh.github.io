@@ -22,7 +22,7 @@ title:  Curriculum Vitae
 
 `May-July, 2018`
 **Exploring Phase Stability and Magnetism in Full-Heusler Alloys.**, *CRANN - Trinity College Dublin, Ireland* <br/>
-Dr. Stefano Sanvito <br/>
+<a href="https://scholar.google.com/citations?user=EUXp2J0AAAAJ&hl=en">Dr. Stefano Sanvito</a> <br/>
 Carried out Electronic Structure Calculations, at the level of Density Functional Theory, for alternative crystal structures and possible complex magnetic ground states. In a significant number of cases, especially for Unconventional Heuslers, was able to identify new lowest energy structure below the convex hull diagram for given chemical composition.<br/>
 
 `May-July, 2017`
