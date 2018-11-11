@@ -41,24 +41,24 @@ Investigated the electronic and structural properties of a variety of 2-D Boroph
 ## Research Projects
 
 `August,2018 - Ongoing` **Multiscale Modelling of Polymeric Systems** <br/>
-Dr. Prateek Kumar Jha, Department of Chemical Engineering, IIT Roorkee <br/>
+<a href="https://scholar.google.co.in/citations?user=SAgH8nsAAAAJ&hl=en">Dr. Prateek Kumar Jha</a>, Department of Chemical Engineering, IIT Roorkee <br/>
 As part of my final year project, I’m working on investigating Aggregation of a polymer as a
 function of pH level of the system via. systematic course graining using the results of Atomistic level
 simulations.
 
 `September, 2018 - Ongoing` **Alkali metal based Alloys as High F.O.M. thermoelectrics** <br/>
-Dr. Hem Chandra Kandpal, Department of Chemistry, IIT Roorkee <br/>
+<a href="https://scholar.google.co.in/citations?user=0QZudlsAAAAJ&hl=en">Dr. Hem Chandra Kandpal</a>, Department of Chemistry, IIT Roorkee <br/>
 Thermoelectric investigation of Alkali metal based Heuslers where we use Wien2k, BoltzTraP and
 Phono3py (with VASP) to calculate electronic, transport and thermal properties respectively.
 
 `January - April, 2018` **CFD modelling of a PCR reaction using COMSOL-Multiphysics** <br/>
-Dr. Prateek Kumar Jha, Department of Chemical Engineering, IIT Roorkee <br/>
+<a href="https://scholar.google.co.in/citations?user=SAgH8nsAAAAJ&hl=en">Dr. Prateek Kumar Jha</a>, Department of Chemical Engineering, IIT Roorkee <br/>
 With the aim to explore the use and functioning of Microreactors in Diagnostic applications as part
 of the Process modelling and Simulation Course, one of which is in a PCR unit, whose function is to
 divide and then Multiply DNA from blood samples. Used COMSOL to model the mass and momentum transfer through three stages of PCR.
 
 `July - September, 2017` **Design of effecient materials for Photocatalytic Water Splitting** <br/>
-Dr. Hem Chandra Kandpal, Department of Chemistry, IIT Roorkee <br/>
+<a href="https://scholar.google.co.in/citations?user=0QZudlsAAAAJ&hl=en">Dr. Hem Chandra Kandpal</a>, Department of Chemistry, IIT Roorkee <br/>
 Our collaborators at IISER Mohali, India identified a stable ’Ta’ based material whose efficiency for
 OER compares to some of the best materials reported for Water splitting. Our job was to explain
 this on the basis of properties derived from the bandstructure of the material.
@@ -87,7 +87,7 @@ ranging from *Working of a mosquito repellent machine* to *How crypto-currency w
 
 ## References
 
-**Dr. Stefano Sanvito**                                      
+**<a href="https://scholar.google.com/citations?user=EUXp2J0AAAAJ&hl=en">Dr. Stefano Sanvito</a>**                                      
 Professor, Physics and Head, CRANN                       
 Trinity College Dublin                                   
 Dublin 2, Ireland                                        
