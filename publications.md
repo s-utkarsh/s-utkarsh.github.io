@@ -12,4 +12,4 @@ You can look at some nifty guides, tips and tricks I learned while working on di
   
 - <h3>Modelling of a Polymerase Chain Reaction (PCR) in COMSOL</h3>
 
-  As part of my course project last semester, I had to investigate the use and functioning of Microreactors in Diagnostic applications. One of these uses is in a PCR unit, whose function is to [Read more.. ](/k_lattice.md)
+  As part of my course project last semester, I had to investigate the use and functioning of Microreactors in Diagnostic applications. One of these uses is in a PCR unit, whose function is to [Read more.. ](/pcr.md)
