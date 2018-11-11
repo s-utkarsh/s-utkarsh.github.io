@@ -84,12 +84,12 @@ ranging from *Working of a mosquito repellent machine* to *How crypto-currency w
 
 ## References
 
-Dr. Stefano Sanvito   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  Dr. Hem Chandra Kandpal <br/>
-Professor, Physics and Head, CRANN        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asso. Professor, Department of Chemistry <br/>
-Trinity College Dublin                    Indian Institute of Technology, Roorkee <br/>
-Dublin 2, Ireland                         Roorkee, India -247667 <br/>
-Email: ssanvito@tcd.ie                    Email: hem12fcy@iitr.ac.in <br/>
-Phone: +353 1 896 3065                    Phone: +91 1332 284764 <br/>
+Dr. Stefano Sanvito                                      Dr. Hem Chandra Kandpal <br/>
+Professor, Physics and Head, CRANN                       Asso. Professor, Department of Chemistry <br/>
+Trinity College Dublin                                   Indian Institute of Technology, Roorkee <br/>
+Dublin 2, Ireland                                        Roorkee, India -247667 <br/>
+Email: ssanvito@tcd.ie                                   Email: hem12fcy@iitr.ac.in <br/>
+Phone: +353 1 896 3065                                   Phone: +91 1332 284764 <br/>
 
 Dr. Vijay Kumar <br/>
 Head, Vijay Kumar Foundation <br/>
