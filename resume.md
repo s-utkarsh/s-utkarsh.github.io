@@ -37,22 +37,50 @@ Dr. Stefano Sanvito
 
 ## Research Projects
 
-`August,2018 - Ongoing` Multiscale Modelling of Polymeric Systems <br/>
+`August,2018 - Ongoing` **Multiscale Modelling of Polymeric Systems** <br/>
 Dr. Prateek Kumar Jha, Department of Chemical Engineering, IIT Roorkee <br/>
 As part of my final year project, I’m working on investigating Aggregation of a polymer as a
 function of pH level of the system via. systematic course graining using the results of Atomistic level
 simulations.
 
-`September, 2018 - Ongoing` Alkali metal based Alloys as High F.O.M. thermoelectrics <br/>
+`September, 2018 - Ongoing` **Alkali metal based Alloys as High F.O.M. thermoelectrics** <br/>
 Dr. Hem Chandra Kandpal, Department of Chemistry, IIT Roorkee <br/>
 Thermoelectric investigation of Alkali metal based Heuslers where we use Wien2k, BoltzTraP and
 Phono3py (with VASP) to calculate electronic, transport and thermal properties respectively.
 
-`September, 2018 - Ongoing` Alkali metal based Alloys as High F.O.M. thermoelectrics <br/>
+`January - April, 2018` **CFD modelling of a PCR reaction using COMSOL-Multiphysics** <br/>
+Dr. Prateek Kumar Jha, Department of Chemical Engineering, IIT Roorkee <br/>
+With the aim to explore the use and functioning of Microreactors in Diagnostic applications as part
+of the Process modelling and Simulation Course, one of which is in a PCR unit, whose function is to
+divide and then Multiply DNA from blood samples. Used COMSOL to model the mass and momentum transfer through three stages of PCR.
+
+`July - September, 2017` **Design of effecient materials for Photocatalytic Water Splitting** <br/>
 Dr. Hem Chandra Kandpal, Department of Chemistry, IIT Roorkee <br/>
-Thermoelectric investigation of Alkali metal based Heuslers where we use Wien2k, BoltzTraP and
-Phono3py (with VASP) to calculate electronic, transport and thermal properties respectively.
+Our collaborators at IISER Mohali, India identified a stable ’Ta’ based material whose efficiency for
+OER compares to some of the best materials reported for Water splitting. Our job was to explain
+this on the basis of properties derived from the bandstructure of the material.
 
+##  Extra-Curriculars
 
+`2018-Present` **Undergraduate Teaching Assistant** <br/>
+Physcial Chemistry (CY-001) - IIT Roorkee <br/>
 
+`2017-2018` **General Secratary** <br/>
+Indian Institute of Chemical Engineers (IIChE) Students’ Chapter - IIT Roorkee <br/>
+
+`2015-2017` **Editor** <br/>
+Watch Out! - Student Media Body - IIT Roorkee <br/>
+
+## Community Service
+
+**Volunteer, Rural Education Cell, National Service Scheme (NSS)- IITR** <br/>
+Through this initiative, students in their freshman year teach young kids from surrounding villages
+who can’t afford tutors and are lacking in basics or, are appearing for High-school examinations. <br/>
+
+**Special Interest Group** <br/>
+This is a small group some of us like minded people started to promote research among undergrads.
+Common activities include lectures form peers on informative topics and industrial problem-solving
+ranging from *Working of a mosquito repellent machine* to *How crypto-currency works*.
+
+## References
 
