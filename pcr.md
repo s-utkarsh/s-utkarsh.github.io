@@ -29,6 +29,24 @@ The flow in microreactor is governed by viscous forces rather than inertial forc
 Here, we take a look at the process of detection of diseases such as Malaria, Tuberculosis etc. which is done typically via. Blood testing.  And our particular model, will focus on one of these units: **Amplification unit (A type of plug flow reactor) of the system**
 
 
+### Mathematical Model of PCR
+
+Every genome (disease injected/ human DNA) has a particular fluorescence value which, when detected, confirms the presence of a disease in the system as well as the stage of the disease depending upon the genome count. However, for all practical testing purposes, we can only draw up to a millilitre of patient’s blood, which is not enough for detection.
+
+A DNA amplification sequence will move ahead in 3 steps as per out model:
+
+<img src="model.jpg" alt="PCR cycle" width="600" height="300">
+Step 1: Denaturation of Double strand DNA (dsDNA):,br/>
+      dsDNA -> 2*ssDNA (T= 368.15 K) <br/>
+Step 2: Annealing of Single strand DNA (ssDNA):<br/>
+      ssDNA + enzyme  aDNA (T= 328.15 K) <br/>
+Step 3: Extension of Annealed DNA (aDNA):<br/>
+      aDNA -> dsDNA (T= 345.15 K) <br/>
+      
+All these steps have an associated efficiency(yield in this case): 
+Ꜫdenaturation, Ꜫannealing & Ꜫextension <br/>
+Hence, we can write, after ‘n’ such PCR cycles: 
+[DNA]<sub>n</sub> = [DNA]<sub>0</sub>(1+Ꜫ)<sup>n</sup>      Where, Ꜫ = Ꜫ<sub>denaturation</sub>] * Ꜫ<sub>annealing</sub> * Ꜫ<sub>extension</sub> = efficiency of PCR unit
 
 
 
