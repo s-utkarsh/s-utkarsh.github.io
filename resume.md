@@ -6,7 +6,6 @@ title:  Resume
 *Undergraduate Student, IIT Roorkee, India*
 
 <!--<a href="mailto:usingh1@ch.iitr.ac.in">usingh1@ch.iitr.ac.in</a> - (+91) - 8899416395-->
-
 ## Education
 
 `2015-Present`
