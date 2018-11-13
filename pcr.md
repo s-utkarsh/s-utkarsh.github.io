@@ -36,30 +36,39 @@ Every genome (disease injected/ human DNA) has a particular fluorescence value w
 A DNA amplification sequence will move ahead in 3 steps as per out model: <br/>
 
 <img src="model.jpg" alt="PCR cycle" width="600" height="300">
-Step 1: Denaturation of Double strand DNA (dsDNA):,<br/>
+<br/>
 
-   dsDNA -> 2*ssDNA (T= 368.15 K) <br/>
+Step 1: Denaturation of Double strand DNA (dsDNA):,<br/>
+     dsDNA -> 2 * ssDNA (T= 368.15 K) <br/>
       
 Step 2: Annealing of Single strand DNA (ssDNA):<br/>
-     
-   ssDNA + enzyme  aDNA (T= 328.15 K) <br/>
+     ssDNA + enzyme -> aDNA (T= 328.15 K) <br/>
 
 Step 3: Extension of Annealed DNA (aDNA):<br/>
-    
-   aDNA -> dsDNA (T= 345.15 K) <br/>
+     aDNA -> dsDNA (T= 345.15 K) <br/>
       
 All these steps have an associated efficiency(yield in this case): 
 Ꜫdenaturation, Ꜫannealing & Ꜫextension <br/>
 
 Hence, we can write, after ‘n’ such PCR cycles: <br/>
 
-[DNA]<sub>n</sub> = [DNA]<sub>0</sub>(1+Ꜫ)<sup>n</sup>      Where, Ꜫ = Ꜫ<sub>denaturation</sub> * Ꜫ<sub>annealing</sub> * Ꜫ<sub>extension</sub> = efficiency of PCR unit <br/>
+[DNA]<sub>n</sub> = [DNA]<sub>0</sub>(1+Ꜫ)<sup>n</sup>      <br/>
+Where, Ꜫ = Ꜫ<sub>denaturation</sub> * Ꜫ<sub>annealing</sub> * Ꜫ<sub>extension</sub> = efficiency of PCR unit <br/>
 
 
-And the detected fluorescence is:  Fn = α * [DNA]<sub>n</sub>   Where α is the const. of proportionality dependent on the instrument used to measure the fluorescence. <br/>
+And the detected fluorescence is:  **Fn = α * [DNA]**<sub>n</sub>   Where α is the const. of proportionality dependent on the instrument used to measure the fluorescence. <br/>
 
 
-**Process variables**: Concentration, time, efficiency          **Defined/ Control variables**: T, ΔP
+**Process variables**: Concentration, time, efficiency
+**Defined/ Control variables**: T, ΔP
 
 ### Computational Model
 
+Using COMSOL, we have modelled the above sequence of events in a microreactor. <br/>
+
+#### Geometry
+
+<img src="geometry.jpg" alt="Geometry" width="300" height="300">
+<br/>
+
+#### Meshing
