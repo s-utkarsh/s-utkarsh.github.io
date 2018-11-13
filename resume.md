@@ -5,7 +5,7 @@ title:  Resume
 #### (Find PDF <a href="https://github.com/s-utkarsh/s-utkarsh.github.io/raw/master/Utkarsh-IIT.pdf">here</a>)
 *Undergraduate Student, IIT Roorkee, India*
 
-<a href="mailto:usingh1@ch.iitr.ac.in">usingh1@ch.iitr.ac.in</a> - (+91) - 8899416395
+<!--<a href="mailto:usingh1@ch.iitr.ac.in">usingh1@ch.iitr.ac.in</a> - (+91) - 8899416395-->
 
 ## Education
 
