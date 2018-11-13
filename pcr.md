@@ -123,7 +123,7 @@ After confining reactions to temperature zones specified above, we get the follo
 
 **Concentration of aDNA**
 
-<img src="/pcr/aDNA.PNG" alt="Geometry" width="600" height="350">
+<img src="/pcr/aDNA.png" alt="Geometry" width="600" height="350">
 <br/>
 
 **Concentration of dDNA**
