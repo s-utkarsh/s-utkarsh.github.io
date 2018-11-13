@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Curriculum Vitae
+title:  Resume (Find PDF <a href="https://github.com/s-utkarsh/resume.pdf">here</a>)
 ---
 *Undergraduate Student, IIT Roorkee, India*
 
@@ -9,7 +9,7 @@ title:  Curriculum Vitae
 ## Education
 
 `2015-Present`
-**Bachelors of Technology, Chemical Engineering**, <br/>*Indian Institute of Technology, Roorkee*, India.
+**Bachelor of Technology, Chemical Engineering**, <br/>*Indian Institute of Technology, Roorkee*, India.
 <br/>GPA: *7.93 on a 10.00 point scale*<br/><br/>
 `2012-2014`
 **Senior Secondary Education**, <br/>*Central Board of Secondary Education*, India.
