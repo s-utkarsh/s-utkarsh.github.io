@@ -22,7 +22,7 @@ The flow in microreactor is governed by viscous forces rather than inertial forc
 
 ## Model
 
-<img src="model.jpg" alt="Model of a PCR unit" width="600" height="300">
+<img src="/pcr/model.jpg" alt="Model of a PCR unit" width="600" height="300">
 
 ### Overview:
 
@@ -35,7 +35,7 @@ Every genome (disease injected/ human DNA) has a particular fluorescence value w
 
 A DNA amplification sequence will move ahead in 3 steps as per out model: <br/>
 
-<img src="model.jpg" alt="PCR cycle" width="600" height="300">
+<img src="/pcr/cycle.jpg" alt="PCR cycle" width="600" height="300">
 <br/>
 
 Step 1: Denaturation of Double strand DNA (dsDNA):,<br/>
@@ -73,6 +73,8 @@ Using COMSOL, we have modelled the above sequence of events in a microreactor. <
 
 #### Meshing:
 
+<img src="/pcr/meshing.jpg" alt="Geometry" width="300" height="300">
+<br/>
 
 ### Physics:
 
@@ -89,17 +91,17 @@ To model 1 PCR cycle, we’ve divided the module in 3 different temperature zone
 
 **Denaturation Zone (T= 368.15 K)**
 
-<img src="/pcr/denaturation.jpg" alt="Geometry" width="300" height="300">
+<img src="/pcr/denaturation_d.jpg" alt="Geometry" width="300" height="300">
 <br/>
 
 **Annealing Zone (T= 328.15 K)**
 
-<img src="/pcr/geometry.jpg" alt="Geometry" width="300" height="300">
+<img src="/pcr/geometry_a.jpg" alt="Geometry" width="300" height="300">
 <br/>
 
 **Extension Zone (T = 345.15 K)**
 
-<img src="/pcr/geometry.jpg" alt="Geometry" width="300" height="300">
+<img src="/pcr/geometry_e.jpg" alt="Geometry" width="300" height="300">
 <br/>
 
 
