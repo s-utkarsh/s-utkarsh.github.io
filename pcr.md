@@ -68,12 +68,12 @@ Using COMSOL, we have modelled the above sequence of events in a microreactor. <
 
 #### Geometry:
 
-<img src="/pcr/Geometry.PNG" alt="Geometry" width="600" height="350">
+<img src="/pcr/Geometry.PNG" alt="Geometry" width="550" height="350">
 <br/>
 
 #### Meshing:
 
-<img src="/pcr/Mesh.PNG" alt="Geometry" width="600" height="350">
+<img src="/pcr/Mesh.PNG" alt="Geometry" width="550" height="350">
 <br/>
 
 ### Physics:
@@ -128,7 +128,7 @@ After confining reactions to temperature zones specified above, we get the follo
 
 **Concentration of dDNA**
 
-<img src="/pcr/dDNA.PNG" alt="Geometry" width="600" height="350">
+<img src="/pcr/dsDNA.PNG" alt="Geometry" width="600" height="350">
 <br/>
 
 • Expectedly, the value of single strand DNA increases in Zone 1 and then slowly decreases as annealing and extension takes place.
