@@ -22,7 +22,7 @@ The flow in microreactor is governed by viscous forces rather than inertial forc
 
 ## Model
 
-<img src="/pcr/model.jpg" alt="Model of a PCR unit" width="600" height="350">
+<img src="/pcr/model.jpg" alt="Model of a PCR unit" width="600" height="300">
 
 ### Overview:
 
@@ -68,12 +68,12 @@ Using COMSOL, we have modelled the above sequence of events in a microreactor. <
 
 #### Geometry:
 
-<img src="/pcr/Geometry.png" alt="Geometry" width="600" height="350">
+<img src="/pcr/Geometry.PNG" alt="Geometry" width="600" height="350">
 <br/>
 
 #### Meshing:
 
-<img src="/pcr/Mesh.png" alt="Geometry" width="600" height="350">
+<img src="/pcr/Mesh.PNG" alt="Geometry" width="600" height="350">
 <br/>
 
 ### Physics:
@@ -91,17 +91,17 @@ To model 1 PCR cycle, we’ve divided the module in 3 different temperature zone
 
 **Denaturation Zone (T= 368.15 K)**
 
-<img src="/pcr/part1.png" alt="Geometry" width="600" height="350">
+<img src="/pcr/part1.PNG" alt="Geometry" width="600" height="350">
 <br/>
 
 **Annealing Zone (T= 328.15 K)**
 
-<img src="/pcr/part2.png" alt="Geometry" width="600" height="350">
+<img src="/pcr/part2.PNG" alt="Geometry" width="600" height="350">
 <br/>
 
 **Extension Zone (T = 345.15 K)**
 
-<img src="/pcr/part3.png" alt="Geometry" width="600" height="350">
+<img src="/pcr/part3.PNG" alt="Geometry" width="600" height="350">
 <br/>
 
 
@@ -118,17 +118,17 @@ After confining reactions to temperature zones specified above, we get the follo
 
 **Concentration of ssDNA**
 
-<img src="/pcr/ssDNA.png" alt="Geometry" width="600" height="350">
+<img src="/pcr/ssDNA.PNG" alt="Geometry" width="600" height="350">
 <br/>
 
 **Concentration of aDNA**
 
-<img src="/pcr/aDNA.png" alt="Geometry" width="600" height="350">
+<img src="/pcr/aDNA.PNG" alt="Geometry" width="600" height="350">
 <br/>
 
 **Concentration of dDNA**
 
-<img src="/pcr/dDNA.png" alt="Geometry" width="600" height="350">
+<img src="/pcr/dDNA.PNG" alt="Geometry" width="600" height="350">
 <br/>
 
 • Expectedly, the value of single strand DNA increases in Zone 1 and then slowly decreases as annealing and extension takes place.
