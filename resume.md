@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Resume <br/> (Find PDF <a href="https://github.com/s-utkarsh/s-utkarsh.github.io/raw/master/Utkarsh-IIT.pdf">here</a>)
+title:  Resume <br/> <h4>(Find PDF <a href="https://github.com/s-utkarsh/s-utkarsh.github.io/raw/master/Utkarsh-IIT.pdf">here</a>)</h4>
 ---
 *Undergraduate Student, IIT Roorkee, India*
 
