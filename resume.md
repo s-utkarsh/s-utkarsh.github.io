@@ -26,7 +26,7 @@ title:  Curriculum Vitae
 Carried out Electronic Structure Calculations, at the level of Density Functional Theory, for alternative crystal structures and possible complex magnetic ground states. In a significant number of cases, especially for Unconventional Heuslers, was able to identify new lowest energy structure below the convex hull diagram for given chemical composition.<br/>
 
 `May-July, 2017`
-**Investigating 2-Dimensional Borophene sheets on intermetallic substrates** *Vijay Kumar Foundation, India* <br/>
+**Investigating 2-Dimensional Borophene on intermetallic substrates** *Vijay Kumar Foundation, India* <br/>
 <a href="https://scholar.google.co.in/citations?user=Uq92p1kAAAAJ&hl=en">Dr. Vijay Kumar</a> <br/>
 Investigated the electronic and structural properties of a variety of 2-D Borophene sheets on differnt suitable intermetallic substrates using Electronic Strucure Calculations via. DFT approach. *Currently working on a manuscript to be published in a reputed peer-reviewed journal.*<br/>
 
