@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  Curriculum Vitae
 ---
 *Undergraduate Student, IIT Roorkee, India*
