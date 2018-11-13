@@ -68,12 +68,12 @@ Using COMSOL, we have modelled the above sequence of events in a microreactor. <
 
 #### Geometry:
 
-<img src="/pcr/geometry.jpg" alt="Geometry" width="600" height="300">
+<img src="/pcr/Geometry.png" alt="Geometry" width="600" height="300">
 <br/>
 
 #### Meshing:
 
-<img src="/pcr/meshing.jpg" alt="Geometry" width="600" height="300">
+<img src="/pcr/Mesh.png" alt="Geometry" width="600" height="300">
 <br/>
 
 ### Physics:
@@ -91,17 +91,17 @@ To model 1 PCR cycle, we’ve divided the module in 3 different temperature zone
 
 **Denaturation Zone (T= 368.15 K)**
 
-<img src="/pcr/denaturation_d.jpg" alt="Geometry" width="600" height="300">
+<img src="/pcr/part1.png" alt="Geometry" width="600" height="300">
 <br/>
 
 **Annealing Zone (T= 328.15 K)**
 
-<img src="/pcr/geometry_a.jpg" alt="Geometry" width="600" height="300">
+<img src="/pcr/part2.png" alt="Geometry" width="600" height="300">
 <br/>
 
 **Extension Zone (T = 345.15 K)**
 
-<img src="/pcr/geometry_e.jpg" alt="Geometry" width="600" height="300">
+<img src="/pcr/part3.png" alt="Geometry" width="600" height="300">
 <br/>
 
 
@@ -116,13 +116,19 @@ After confining reactions to temperature zones specified above, we get the follo
 
 (Due to resource restriction, we limited the time for reaction to 1 second and have modelled a single PCR cycle. Also, a coarser but refined mesh was used to model Non-isothermal flow.)
 
-<img src="/pcr/res1.jpg" alt="Geometry" width="600" height="300">
+**Concentration of ssDNA**
+
+<img src="/pcr/ssDNA.png" alt="Geometry" width="600" height="300">
 <br/>
 
-<img src="/pcr/res2.jpg" alt="Geometry" width="600" height="300">
+**Concentration of aDNA**
+
+<img src="/pcr/aDNA.png" alt="Geometry" width="600" height="300">
 <br/>
 
-<img src="/pcr/res3.jpg" alt="Geometry" width="600" height="300">
+**Concentration of dDNA**
+
+<img src="/pcr/dDNA.png" alt="Geometry" width="600" height="300">
 <br/>
 
 • Expectedly, the value of single strand DNA increases in Zone 1 and then slowly decreases as annealing and extension takes place.
