@@ -22,7 +22,7 @@ The flow in microreactor is governed by viscous forces rather than inertial forc
 
 ## Model
 
-<img src="/pcr/model.jpg" alt="Model of a PCR unit" width="600" height="400">
+<img src="/pcr/model.jpg" alt="Model of a PCR unit" width="600" height="350">
 
 ### Overview:
 
@@ -35,7 +35,7 @@ Every genome (disease injected/ human DNA) has a particular fluorescence value w
 
 A DNA amplification sequence will move ahead in 3 steps as per out model: <br/>
 
-<img src="/pcr/cycle.jpg" alt="PCR cycle" width="600" height="400">
+<img src="/pcr/cycle.jpg" alt="PCR cycle" width="600" height="300">
 <br/>
 
 Step 1: Denaturation of Double strand DNA (dsDNA):,<br/>
