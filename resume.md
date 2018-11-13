@@ -10,7 +10,7 @@ title:  Resume
 
 `2015-Present`
 **Bachelor of Technology, Chemical Engineering**, <br/>*Indian Institute of Technology, Roorkee*, India.
-<br/>GPA: *7.93 on a 10.00 point scale*<br/><br/>
+<br/>GPA: *7.95 on a 10.00 point scale*<br/><br/>
 `2012-2014`
 **Senior Secondary Education**, <br/>*Central Board of Secondary Education*, India.
 <br/>*92.8%*<br/><br/>
