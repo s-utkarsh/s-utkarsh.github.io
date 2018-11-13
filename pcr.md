@@ -53,7 +53,7 @@ All these steps have an associated efficiency(yield in this case):
 Hence, we can write, after ‘n’ such PCR cycles: <br/>
 
 [DNA]<sub>n</sub> = [DNA]<sub>0</sub>(1+Ꜫ)<sup>n</sup>      <br/>
-Where, Ꜫ = Ꜫ<sub>denaturation</sub> * Ꜫ<sub>annealing</sub> * Ꜫ<sub>extension</sub> = efficiency of PCR unit <br/>
+where, Ꜫ = Ꜫ<sub>denaturation</sub> * Ꜫ<sub>annealing</sub> * Ꜫ<sub>extension</sub> = efficiency of PCR unit <br/>
 
 
 And the detected fluorescence is:  **Fn = α * [DNA]**<sub>n</sub>   Where α is the const. of proportionality dependent on the instrument used to measure the fluorescence. <br/>
@@ -127,7 +127,6 @@ After confining reactions to temperature zones specified above, we get the follo
 <br/>
 • The value of aDNA is negligible in Zone 1 and 2, increases to a value which remains constant throughout Zone 3.
 
-<br/>
 
 The value of dsDNA, although initially low due to low concentration becomes lower in zone 1 via. Denaturation (opposite to ssDNA) but increases to a higher value after extension in Zone 3, indicating multiplication of dsDNA w.r.t. initial value.
 ( A higher wavelength colour indicates higher concentration value)
@@ -137,4 +136,5 @@ Hence, for 1 PCR cycle, as shown by the simulation results, Ꜫ<sub>denaturation
 ## Conclusion & Way Ahead:
 
 The importance of numbering up instead of scaling up: Here, we can easily see via. The small difference in order of ssDNA and dsDNA and a higher difference in order of aDNA that the **efficiency of a single PCR cycle is quite low** and hence in a complete PCR, this same unit is **repeated to nearly 100 times** in order to **minimize the concentration of ssDNA and aDNA w.r.t. dsDNA**.
+
 This unit, with larger computational resources could easily be repeated **for a larger spacetime domain** in order to fully simulate a PCR microreactor.
