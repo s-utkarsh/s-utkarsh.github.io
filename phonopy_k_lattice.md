@@ -2,32 +2,35 @@
 layout: page
 title: Lattice thermal conductivity using Phono3py and VASP
 ---
-Currently I'm working with some Alkali metal based Thermoelectric materials, where the lattice thermal conductivity has not been
-reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub></b> using Phono3py, here I list out some common       pitfalls and summarize the way to carry out calculations. Here are the steps to follow (Always read, make notes, re-read and improve notes)
+While investigating the vibrational dynamics of your system, a number of physical quantities and relations between physical quantities help us evaluate the dynamic properties of the system. Continuing the previous thread, we'll look at properties which support our result for lattice thermal conductivity (<b>&kappa;<sub>L</sub></b>) whether it is very low or very high.
 
-I. Stuff to keep in mind while analyzing results (Is this really what you want?):
+I. Phonon bandstructure:
 
-- The single mode relaxation time approximation (RTA): This is what we're using here
-- Linearized phonon Boltzmann equation: This is what we're solving here
-- The phonon-boundary scattering model: This indicates the scope of this calculation
-- The anharmonic force constant (3rd order): The absolute thermal conductivity, calssically can be expressed as a taylor series expansion
-- Fermi’s golden rule > Im (self energy) = G : The scope of this calculation
-- Phonon lifetime t = 1/2G (To double check your phonon-lifetime results)
-
-II. Your fundamental input file (<b>Don't be a sheep, make appropriate changes</b>) 
-
-    PREC = Accurate 
-    IBRION = -1  #not moving ions at all, but calculating forces  
-    ISTART=1 #we're using previously generated WAVECAR to reduce computational time  
-    ENCUT = 500   
-    EDIFF = 1.0e-08 #We definitely need good precision 
-    ISMEAR = 0 
-    SIGMA = 0.01 #choose whatever suits your system 
-    IALGO = 38 
-    LREAL = .FALSE. #important 
-    LWAVE = .FALSE. 
-    LCHARG = .FALSE 
-    ADDGRID=.TRUE. #The single most important parameter, which ensures that the forces are accurate 
+- We'll calculate the phonon bandstructure using phonopy and VASP via. the DFPT method where the linear response (force) corresponding to the displacement of one ion in 3 mutually perpendicular directions each is recorded and used to calculate the dispersion of frequency with k-points in reciprocal space for the cell.
+- As consistent with the theme for phono3py, we shall do this calculation for a conventional cell using the following set of commands:
+    ```
+    phonopy -d --dim="2 2 2" -c POSCAR-unitcell
+    ```
+    We should make sure that POSCAR-unitcell is completely relaxed. A few files including POSCAR-XXXX and SPOSCAR are generated. For DFPT, the SPOSCAR file is relevant and for FDM (Finite dsplacement method), we utilize the POSCAR-XXXX files.
+    ```
+    cp SPOSCAR POSCAR
+    ```
+    The INCAR file is prepared as follows:(<b> make appropriate changes, don't be a sheep </b>)
+    ```
+    SYSTEM=Your System name
+    IBRION=8
+    IALGO=38
+    LWAVE=.FALSE.
+    LCHARG=.FALSE.
+    LREAL=.FALSE.
+    PREC=Accurate
+    EDIFF=1E-7     #make sure this is the same as used for relaxation of unit cell
+    EDIFFG=1E-8
+    ISMEAR=0
+    SIGMA=0.1
+    ADDGRID=.TRUE.
+    ```
+    We should make sure that EDIFF and EDIFFG are the same as used for relaxing POSCAR-unitcell in order to not have extra forces spoiling our party!!
 
 III. Preparing <b>POSCAR-unitcell</b> and <b>WAVECAR</b> (we need it for phono3py)
 
@@ -41,7 +44,7 @@ III. Preparing <b>POSCAR-unitcell</b> and <b>WAVECAR</b> (we need it for phono3p
 IV. Running phono3py to generate displacements:
 
 - phono3py -d --dim="2 2 2" -c POSCAR-unitcell #--dim
-- for isotropic lattices, we can also use phono3py --dim="2 2 2" <b>--sym-fc</b> -c POSCAR-unitcell
+- for isotropic lattices, we can  one calculatesalso use phono3py --dim="2 2 2" <b>--sym-fc</b> -c POSCAR-unitcell
 - A large number of POSCAR files (titled POSCAR-XXXXX) would be generated for which we would have to do force calculations using the INCAR provided above. 
 
 V. Here comes the tricky part, <b> How to do all these calculations ? </b>:
