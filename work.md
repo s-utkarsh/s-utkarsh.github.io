@@ -5,7 +5,7 @@ title: Work Blog
 
 You can look at some nifty guides, tips and tricks I learned while working on different projects involving different classes of Materials.
 ## Recent Posts
-- <h3><a href="https://s-utkarsh.github.io/phonopy_k_lattice/">Lattice thermal conductivity using Phono3py & VASP</a></h3>
+- <h3><a href="https://s-utkarsh.github.io/phonopy_k_lattice/">Phonons with Phonopy #1 : Phonon Bandstructure and Projected DOS</a></h3>
 
   Currently I'm working with some Alkali metal based Thermoelectric materials, where the lattice thermal conductivity has not been
   reported. There being no definitive guide to calculating <b>&kappa;<sub>L</sub></b> using Phono3py, here I list out some common pitfalls   and summarize the way to carry out calculations. [Read more.. ](/phonopy_k_lattice.md)
