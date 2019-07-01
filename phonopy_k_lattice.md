@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lattice thermal conductivity using Phono3py and VASP
+title: Phonons with Phonopy #1 : Bandstructure & Partial Phonon-DOS
 ---
 While investigating the vibrational dynamics of your system, a number of physical quantities and relations between physical quantities help us evaluate the dynamic properties of the system. Continuing the previous thread, we'll look at properties which support our result for lattice thermal conductivity (<b>&kappa;<sub>L</sub></b>) whether it is very low or very high.
 
@@ -39,7 +39,7 @@ I. Phonon bandstructure:
     ```
     phonopy --fc vasprun.xml
     ```
-    you will notice that a new file called FORCE_CONSTANTS is generated.
+    You will notice that a new file called FORCE_CONSTANTS is generated.
     After that, a band.conf file is to be created which phonopy will read and provide you with the phonon dispersion data.
     A sample system is Fe2VAl, a well known Heusler alloy for which a band.conf file would look like this.
     ```
@@ -63,5 +63,5 @@ I. Phonon bandstructure:
     This should put all the plottable data in the file out_band. 
     After plotting it looks like.
     
-    <img src="/pcr/ph1.svg" alt="bands" width="600" height="300">
+    <img src="/pcr/ph1.svg" alt="bands" width="900" height="400">
     
