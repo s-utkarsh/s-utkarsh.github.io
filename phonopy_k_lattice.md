@@ -65,3 +65,11 @@ I. Phonon bandstructure:
     
     <img src="/pcr/ph1.svg" alt="bands" width="900" height="400">
     
+II. Atom projected phonon density of states:
+
+While the bandstructure does give a lot of information about the vibrational dynamics of the system, in order to find out what atom contributes the most to the increase/decrease in rattling, one must look at the atomic contributions to the number of phonon modes at relevant frequencies. Projected Phonon-DOS helps us here. Let's have a look at how one can do this using phonopy.
+
+We start from midway in the last section about phonon bandstrcuture where we had created the FORCE_CONSTANTS. Instead of a band.conf, we create another post processing configuration file called pdos.conf which would look like:
+    ```
+    ```
+
