@@ -71,17 +71,17 @@ II. Atom projected phonon density of states:
 
 - We start from midway in the last section about phonon bandstrcuture where we had created the FORCE_CONSTANTS. Instead of a band.conf, we create another post processing configuration file called pdos.conf which would look like (assuming our system is VFe2Al:
 
-    ```
+    ````
     ATOM_NAME = V Fe Al
     DIM = 2 2 2
     MP = 21 21 21
     PDOS = 1 , 2 3 , 4   # 1 atom of V, 2 atoms of Fe and 1 atom of Al (as ordered in POSCAR-unitcell)
-    ```
-After this step, we read force constants with:
+    ````
+    After this step, we read force constants with:
 
-    ```
+    ````
     phonopy -p --readfc pdos.conf -c POSCAR-unitcell >out_pdos &
-    ```
+    ````
 - The plottable data is present in the out_pdos with column 1 having discrete frequency values and columns 2 through 5 having phonon mode contribution from each atom at that frequency.
 PLotting with gnuplot, the data would look something like this:
 
