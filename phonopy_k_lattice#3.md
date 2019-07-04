@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Phonons with Phonopy #1 : Bandstructure & Partial Phonon-DOS
+title: Bandstructure & Partial Phonon-DOS
 ---
 While investigating the vibrational dynamics of your system, a number of physical quantities and relations between physical quantities help us evaluate the dynamic properties of the system. Continuing the previous thread, we'll look at properties which support our result for lattice thermal conductivity (<b>&kappa;<sub>L</sub></b>) whether it is very low or very high.
 
