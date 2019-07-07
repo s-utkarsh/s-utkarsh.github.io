@@ -8,6 +8,8 @@ I. Mode Gr&uuml;neisen parameter:
 
 - Phonopy lets us calculate mode grueneisen parameter as a function of frequency under the harmonic approximation as well as as a function of temperature under the quasi-harmonic approximation. I feel that the variation with frequency analysed along with number of phonon modes and phonon bands provides more insight into the vibrational dynamics of the system.
 
+- Thermal conductivity (&kappa;) varies inversely with the square of Mode Gr&uuml;neisen Parameter (&gamma;)
+
   Make sure to use the same type of unit cell (conventional/primitive) as used to calculate thermal conductivity.
 First, we need to completely relax the structure with say EDIFF=10E-08 (the precision is important) then make changes to the unit cell volume (while maintaining the cell shape). Make one structure with a slightly larger volume and another with equally smaller volume. Put all of these structures in 3 different folders at the same location and rename them to POSCAR-unitcell (name the folders equi, plus and minus respectively) After that, in each folder run:
 
@@ -58,4 +60,4 @@ First, we need to completely relax the structure with say EDIFF=10E-08 (the prec
   grep "frequency:" gruneisen.yaml>freq.dat
   paste gru.dat freq.dat>freqVSgru.dat
   ```
-  Then simply plot column 1 (gruneisen parameter) VS column 4 (frequency) \gamma
+  Then simply plot column 1 (gruneisen parameter) VS column 4 (frequency) 
