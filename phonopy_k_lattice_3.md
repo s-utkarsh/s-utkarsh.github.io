@@ -47,4 +47,13 @@ First, we need to completely relax the structure with say EDIFF=10E-08 (the prec
   
   <img src="/pcr/ph3.svg" alt="bands" width="900" height="400">
   
-  However sometimes, at a negative frequency value (slightly negative, always less than 50cm-1) we might get an extreemely high or low value of gruneisen parameter which is not relevant and we don't want that in the plot as well. In that case
+  However sometimes, at a negative frequency value (slightly negative, although always less than 50cm-1) we might get an extreemely high or low value of gruneisen parameter which is not relevant and we don't want that in the plot as well. 
+  This case might look something like this:
+  <img src="/pcr/ph4.svg" alt="bands" width="900" height="400">
+  In that case, we need to extract the data from another file that is generated 'grunieisen.yaml' which can be done using the following steps:
+  ```
+  grep "gruneisen:" gruneisen.yaml>gru.dat
+  grep "frequency:" gruneisen.yaml>freq.dat
+  paste gru.dat freq.dat>freqVSgru.dat
+  ```
+  Then simply plot column 1 (gruneisen parameter) VS column 4 (frequency) $\gamma$
