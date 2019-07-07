@@ -23,7 +23,7 @@ First, we need to completely relax the structure with say EDIFF=10E-08 (the prec
   cp SPOSCAR POSCAR
   ```
   Using the following INCAR, we do a single step calculation using VASP to measure linear response of the system when 3 ions are displaced in 3 mutually perpendicular directions.
-  ````
+  ```
   SYSTEM=Your System name
   IBRION=8
   IALGO=38
@@ -36,15 +36,15 @@ First, we need to completely relax the structure with say EDIFF=10E-08 (the prec
   ISMEAR=0
   SIGMA=0.1
   ADDGRID=.TRUE.
-  ````
+  ```
   The vasp calculation is simple done by using the following command:
-  ````
+  ```
   mpirun -np 8 vasp_std > out
   ````
   After the calculation is complete, run (outside all 3 directories)
-  ```` 
+  ```
   phonopy-gruneisen equi plus minus --dim="2 2 2" --mesh="20 20 20" -p -c POSCAR-unitcell --color="RB"
-  ````
+  ```
   A file named gruneisen.pdf is formed and it would contain  plot that looks like:
   
   <img src="/pcr/ph3.svg" alt="bands" width="900" height="400">
