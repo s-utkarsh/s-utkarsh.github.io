@@ -7,7 +7,7 @@ You can look at some nifty guides, tips and tricks I learned while working on di
 ## Recent Posts
 - <h3><a href="https://s-utkarsh.github.io/phonopy_k_lattice_3/">Phonons with Phonopy #3 : Gr&uuml;neisen Parameter, Group velocity and Phonon-lifetime</a></h3>
 
-  While investigating the vibrational dynamics of your system, a number of physical quantities and relations [Read more.. ](/phonopy_k_lattice_3.md)
+  Although the phonon bands and DOS would give you some explanation concerning the low or high value of thermal conductivity, the mode Grüneisen parameter is as close as we get [Read more.. ](/phonopy_k_lattice_3.md)
 - <h3><a href="https://s-utkarsh.github.io/phonopy_k_lattice_2/">Phonons with Phonopy #2 : Phonon Bandstructure and Projected DOS</a></h3>
 
   While investigating the vibrational dynamics of your system, a number of physical quantities and relations [Read more.. ](/phonopy_k_lattice_2.md)
