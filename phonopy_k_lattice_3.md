@@ -60,4 +60,10 @@ First, we need to completely relax the structure with say EDIFF=10E-08 (the prec
   grep "frequency:" gruneisen.yaml>freq.dat
   paste gru.dat freq.dat>freqVSgru.dat
   ```
-  Then simply plot column 1 (gruneisen parameter) VS column 4 (frequency) 
+  Then simply plot column 1 (gruneisen parameter) VS column 4 (frequency).
+  
+  For both group velocity and phonon lifetime date, we need the results obtained for thermal conductivity using phono3py as discussed in Phonons with Phonopy #1
+  
+II. Group velocity:
+
+-  
