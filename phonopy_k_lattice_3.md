@@ -66,4 +66,4 @@ First, we need to completely relax the structure with say EDIFF=10E-08 (the prec
   
 II. Group velocity:
 
--  
+- Interchangably used as Scattering rate
