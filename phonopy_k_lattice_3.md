@@ -66,4 +66,27 @@ First, we need to completely relax the structure with say EDIFF=10E-08 (the prec
   
 II. Group velocity:
 
-- Interchangably used as Scattering rate
+- Interchangably used as Scattering rate (=group velocity/boundary mean free path), group velocity is defined as the variation of phonon eigenfrequency within the first brillouin zone.
+If plotted against frequency or mean free path, group velocity provides great insight into contribution of phonons in different frequency intervals to thermal conductivity.
+Group velocity can be extracted from the outfile we created with the last step to calculate lattice thermal conductivity [Find it here.. ](/k_lattice.md)
+The plotted data would look something like this:
+
+<img src="/pcr/ph5.svg" alt="gv" width="400" height="400">
+
+Doesn't look too good does it?
+
+The above plot doesn't make too much sense since there are too many scattered points. To get some meaning out of this, we overlay the scatter plot with the weighted (over no. of phonon modes at frequency f) average of group velocity at each frequency.
+
+This would look like:
+
+<img src="/pcr/ph6.svg" alt="gv" width="400" height="400">
+
+
+III. Phonon lifetime:
+
+Another important physical quantity is the time interval between 2 successive phonon collisions (the lifetime). Just like phonon group velocity, lifetime in specific frequency intervals (acoustic or optical) would indicate whether the phonons in that range scatter more OR less. Ofcourse, a smaller lifetime indicates larger scattering and if it lies in acoustic range, possibly larger thermal conductivity.
+
+Phono3py offers a tool for calculating phonon lifetime obtained from the imaginary part of phonon self-interaction energy. 
+phono3py-kdeplot is part of the package and can be used after you've calculated lattice thermal conductivity.
+The sequence is made clear on the official phonopy webpage [here](https://atztogo.github.io/phono3py/auxiliary-tools.html#phono3py-kdeplot)
+
