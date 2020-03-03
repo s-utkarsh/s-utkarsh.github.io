@@ -1,6 +1,6 @@
 ---
 layout: page
-title: So I wrote a useful code! [*convex (v1.0.1)*](https://github.com/s-utkarsh/convex/releases)
+title: So I wrote a useful code! <a href="https://github.com/s-utkarsh/convex/releases"><i>convex (v1.0.1)</i></a>
 ---
 
 [![DOI](https://zenodo.org/badge/244065279.svg)](https://zenodo.org/badge/latestdoi/244065279)
