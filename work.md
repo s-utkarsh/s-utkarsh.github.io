@@ -5,7 +5,7 @@ title: Work Blog
 
 You can look at some nifty guides, tips and tricks I learned while working on different projects involving different classes of Materials.
 ## Recent Posts
-- <h3><a href="https://s-utkarsh.github.io/convex_post5/">So I wrote a useful code! [*convex (v1.0.1)*](https://github.com/s-utkarsh/convex/releases) </a></h3>
+- <h3><a href="https://s-utkarsh.github.io/convex_post5/">So I wrote a useful code! <a href="https://github.com/s-utkarsh/convex/releases"><i>convex (v1.0.1)</i></a></a></h3>
 
   In September of last year (2019), I was working on finishing up a paper (my first as a First author). During that time, some senior collegues in the same lab, who had submitted a paper on Pressure-driven phase transition [Read more.. ](/convex_post5.md)
 - <h3><a href="https://s-utkarsh.github.io/phonopy_k_lattice_3/">Phonons with Phonopy #3 : Gr&uuml;neisen Parameter, Group velocity and Phonon-lifetime</a></h3>
