@@ -1,3 +1,7 @@
+---
+layout: page
+title:  Resume 
+---
 <object data="https://github.com/s-utkarsh/s-utkarsh.github.io/Resume_2020.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://github.com/s-utkarsh/s-utkarsh.github.io/Resume_2020.pdf">
         <p></p>
